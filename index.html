@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive</title>
+    <title>Photot Frame</title>
+    <style>
+        .photo-album{
+
+        }
+        .photo-frame{
+            width: 400px;
+            border: 5px dotted rosybrown;
+            border-radius: 10px;
+        }
+        .photo img{
+            max-width: 100%;
+        }
+        .photo-details p{
+            display: flex;
+            text-align: justify;
+            margin: 0px 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="Images/Tigar.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h2>Royal Bengal Tiger</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus dolor consequatur nostrum similique veniam possimus quae assumenda, nihil id fuga ad ea enim numquam suscipit facilis, commodi voluptatibus nam magnam.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
