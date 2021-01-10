@@ -11,6 +11,7 @@
             grid-column-gap: 20px;
             grid-row-gap: 20px;
         }
+
         .photo-frame{
             width: 300px;
             height: 267px;
@@ -19,12 +20,16 @@
             position: relative;
             overflow: hidden;
         }
+
         .photo-frame .photo img{
             width: 100%;
         }
+
         .photo-frame:hover .photo img{
             transform: scale(1.7);
+            transition: transform 1s ;
         }
+
         .photo-details{
             position: absolute;
             width: 300px;
@@ -32,6 +37,7 @@
             top: 0px;
             display: none;
         }
+
         .photo-details h3{
             font-size: 23px;
             font-family: sans-serif;
@@ -41,14 +47,17 @@
             text-align: center;
             text-transform: capitalize;
         }
+
         .photo-details p{
             font-size: 18px;
         }
+
         .photo-frame:hover .photo-details{
             display: block;
             background-color: #d6d6d698;
             cursor: pointer;
         }
+
         a{
             text-decoration: none;
             color: black;
