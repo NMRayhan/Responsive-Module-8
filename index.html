@@ -6,34 +6,86 @@
     <title>Photot Frame</title>
     <style>
         .photo-album{
-
+            display: flex;
+            justify-content: space-around;
         }
         .photo-frame{
-            width: 400px;
-            border: 5px dotted rosybrown;
+            width: 300px;
+            height: 267px;
+            border: 10px solid goldenrod;
             border-radius: 10px;
+            position: relative;
         }
-        .photo img{
-            max-width: 100%;
+        .photo-frame .photo img{
+            width: 100%;
+            height: auto;
+        }
+        .photo-details{
+            position: absolute;
+            width: 300px;
+            height: 267px;
+            top: 0px;
+            display: none;
+        }
+        .photo-details h3{
+            font-size: 23px;
+            font-family: 'Times New Roman', Times, serif;
         }
         .photo-details p{
-            display: flex;
-            text-align: justify;
-            margin: 0px 10px;
+            font-size: 18px;
+        }
+        .photo-frame:hover .photo-details{
+            display: block;
+            background-color: rgba(214, 214, 214, 0.596);
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <div class="photo-album">
-        <div class="photo-frame">
-            <div class="photo">
-                <img src="Images/Tigar.jpg" alt="">
+    <main>
+        <h1>My Photo Album</h1>
+        <section class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="Images/Tigar2.jpg" alt="">
+                </div>
+                <div class="photo-details">
+                    <a href="#"><h3>Royal Bengal Tiger</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non earum ex quae et maiores, porro praesentium consectetur excepturi dolorum incidunt? Quisquam reiciendis accusamus reprehenderit quod, neque doloribus alias accusantium.</p>
+                </div>
             </div>
-            <div class="photo-details">
-                <h2>Royal Bengal Tiger</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus dolor consequatur nostrum similique veniam possimus quae assumenda, nihil id fuga ad ea enim numquam suscipit facilis, commodi voluptatibus nam magnam.</p>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="Images/monkey.jpg" alt="">
+                </div>
+                <div class="photo-details">
+                    <a href="#"><h3>monkey</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non earum ex quae et maiores, porro praesentium consectetur excepturi dolorum incidunt? Quisquam reiciendis accusamus reprehenderit quod, neque doloribus alias accusantium.</p>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="Images/cat.jpg" alt="">
+                </div>
+                <div class="photo-details">
+                    <a href="#"><h3>Cat</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non earum ex quae et maiores, porro praesentium consectetur excepturi dolorum incidunt? Quisquam reiciendis accusamus reprehenderit quod, neque doloribus alias accusantium.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="Images/Dog.jpeg" alt="">
+                </div>
+                <div class="photo-details">
+                    <a href="#"><h3>Dog</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non earum ex quae et maiores, porro praesentium consectetur excepturi dolorum incidunt? Quisquam reiciendis accusamus reprehenderit quod, neque doloribus alias accusantium.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
