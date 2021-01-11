@@ -1,6 +1,7 @@
-main{
+body{
     background-color: lightgray;
 }
+
 a{
     text-decoration: none;
     color: rgb(2 103 255);
@@ -105,6 +106,9 @@ section h1{
     grid-template-columns: repeat(3, 1fr);
     position: relative;
     place-items: self-start;
+}
+.course-title a{
+    color: black;
 }
 .course{
     width: 80%;
