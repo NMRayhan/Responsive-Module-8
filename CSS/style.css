@@ -32,7 +32,7 @@ p{
 header{
     width: 90%;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #000000;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -47,6 +47,7 @@ ul li{
 }
 ul li a{
     font-size: 25px;
+    color: #4db987;
 }
 .menu-item ul{
     display: flex;
@@ -54,7 +55,7 @@ ul li a{
     margin-top: 35px;
 }
 .logo a{
-    color: brown;
+    color: #4db987;
     font-size: 40px;
     font-family: 'Potta One', cursive;
     margin-left: 20px;
