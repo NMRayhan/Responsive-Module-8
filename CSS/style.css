@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(224, 222, 222);
+}
+.player img{
+    width: 70px;
+}
+.player-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.section{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.section h1{
+    margin-left: 20px;
+    color: rgb(2 103 255);
+    font-size: 25px;
+    font-family: cursive;
+}
