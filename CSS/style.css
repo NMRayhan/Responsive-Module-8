@@ -11,23 +11,7 @@ a{
 p{
     font-size: 20px;
 }
-/* media Quary */
-@media (max-width:992px) {
-    .top-player{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .blogs{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media (max-width:670px) {
-    .top-player{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .blog{
-        display: block;
-    }
-}
+
 /* Header Section */
 header{
     width: 90%;

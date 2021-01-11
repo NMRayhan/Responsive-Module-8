@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <!-- <link rel="stylesheet" href="css/all.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"
+        integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A=="
+        crossorigin="anonymous" />
+    <style>
+        /* media Quary */
+        @media (max-width:992px) {
+            .top-player {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blogs {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media (max-width:670px) {
+            .top-player {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .blog {
+                display: block;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -115,7 +141,8 @@
                         </div>
                         <div class="rating">4.3</div>
                         <div class="course-duration">
-                            <i class="far fa-clock duration"></i><p> 02:30 hr</p>
+                            <i class="far fa-clock duration"></i>
+                            <p> 02:30 hr</p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +160,8 @@
                         </div>
                         <div class="rating">4.3</div>
                         <div class="course-duration">
-                            <i class="far fa-clock duration"></i><p> 02:30 hr</p>
+                            <i class="far fa-clock duration"></i>
+                            <p> 02:30 hr</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +179,8 @@
                         </div>
                         <div class="rating">4.3</div>
                         <div class="course-duration">
-                            <i class="far fa-clock duration"></i><p> 02:30 hr</p>
+                            <i class="far fa-clock duration"></i>
+                            <p> 02:30 hr</p>
                         </div>
                     </div>
                 </div>
@@ -159,4 +188,5 @@
         </section>
     </main>
 </body>
+
 </html>
